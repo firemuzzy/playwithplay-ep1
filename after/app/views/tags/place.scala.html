@@ -1,0 +1,11 @@
+@(place : Place)
+
+<div class="place" lat="@place.lat" lng="@place.lng">
+    <div class="info" onclick="window.location='@routes.Application.place(place.id)'">
+        <h3>@place.name</h3>
+        <div class="street">@place.street</div>
+        <div class="address">@place.city, @place.region</div>
+        <div class="address">@place.postalCode @place.country</div>
+        <div class="attributes">(@place.attributes.mkString(", "))</div>
+    </div>
+</div>

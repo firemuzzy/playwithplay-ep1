@@ -1,0 +1,15 @@
+.bRed { background:#7E1E06; color:#EFEFEF !important; background-image:-webkit-linear-gradient(top, #923315, #7E1E06); }
+.bGreen { background-color: #5BB75B; color: #EFEFEF !important; background-image: -webkit-linear-gradient(top, #62C462, #51A351); }
+
+.bRed:hover { background-image: -webkit-linear-gradient(top, #BD362F, #7E1E06); }
+.bRed:active { background-image: -webkit-linear-gradient(top, #86332F, #7E1E06); }
+
+.bGreen:hover { background-image: -webkit-linear-gradient(top, #51A351, #51A351); }
+.bGreen:active { background-image: -webkit-linear-gradient(top, #437E43, #51A351); }
+
+.bGreen.disabled { background-color: #B0C7B0; background-image: -webkit-linear-gradient(top, #B0C7B0, #8CA28C);  cursor:auto;}
+.bGreen.disabled:hover { background-image: -webkit-linear-gradient(top, #B0C7B0, #8CA28C); }
+.bGreen.disabled:active { background-image: -webkit-linear-gradient(top, #B0C7B0, #8CA28C); }
+
+.btn {cursor:pointer;}
+.hidden {display:none;}

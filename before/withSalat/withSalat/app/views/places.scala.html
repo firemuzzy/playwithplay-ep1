@@ -1,0 +1,22 @@
+@(places : Seq[Place])
+
+@scripts = {
+}
+
+@css = {
+<link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/places.css")' />
+}
+
+@main("places")(scripts)(css) {
+<div id="HEADER">
+</div>
+
+<div id="PLACES">
+    <h2>Places</h2>
+
+    @places.map {place =>
+    @tags.place(place)
+    }
+</div>
+
+}

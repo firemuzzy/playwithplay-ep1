@@ -1,0 +1,24 @@
+@(title: String)(scripts: Html)(css: Html)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@title</title>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")' />
+    @css
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main_nonoverwritable.css")' />
+</head>
+<body>
+<div id="LNAV">
+    <h1><a href="@routes.Application.index()">MyApp</a></h1>
+    <div class="section">
+        <div class="btn">
+            <a href="@routes.Application.places()">Places</a>
+        </div>
+    </div>
+</div>
+<div id="CONTENT_WRAP">
+    <div id="CONTENT">@content</div>
+</div>
+</body>
+</html>
+
